@@ -1,0 +1,9 @@
+.wallet-img {
+    width: 8rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.wallet-img:hover {
+    opacity: .7;
+}
