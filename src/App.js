@@ -84,7 +84,13 @@ function App() {
         account={account}
         tokens={tokens} />
       <Switch>
-        <Route path="/referer/:referLink">
+        <Route path="/:referLink/:referer">
+          <Main
+            petSuranceBlockchain={petSuranceBlockchain}
+            getBalance={getBalance}
+            account={account} />
+        </Route>
+        <Route path="/:referLink">
           <Main
             petSuranceBlockchain={petSuranceBlockchain}
             getBalance={getBalance}
