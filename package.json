@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^3.4.0",
-    "dotenv": "^9.0.0",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "dotenv": "^9.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
