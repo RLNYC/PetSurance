@@ -1,11 +1,18 @@
 import React from 'react';
+import Cat from '../images/cat.png';
+import Dog from '../images/dog.png';
 
 function Hero({ purchaseTicket, account }) {
     return (
         <div className="jumbotron bg-light pt-1 pb-4 mt-1 mb-2">
-            <h1 className="text-center text-warning mt-3">
-                Pet Insurance Plans for Your Pet
-            </h1>
+            <div className="d-flex justify-content-between align-items-center">
+                <img style={{ width: '70px' }} src={Dog} alt="Dog" />
+                <h1 className="text-center text-warning mt-3">
+                    Pet Insurance Plans for Your Pet
+                </h1>
+                <img style={{ width: '70px' }} src={Cat} alt="Cat" />
+            </div>
+           
             <p className="text-center">
                 Pet insurance covers your dog or cat in case of unexpected injuries or illnesses
             </p>
@@ -62,7 +69,7 @@ function Hero({ purchaseTicket, account }) {
             <hr />
             <div className="d-flex justify-content-between align-items-center">
                 <h4 className="h2">
-                    Price: <span className="badge badge-info">1 ETH</span>
+                    Price: <span className="badge badge-info">0.2 ETH</span>
                 </h4>
                 {account && <button className="btn btn-danger btn-lg" onClick={purchaseTicket}>
                     Purchase
